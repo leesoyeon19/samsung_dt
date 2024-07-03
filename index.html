@@ -1,53 +1,179 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>이소연의 사이트에 오신 것을 환영합니다</title>
-		<style>
-			table * {border: 1px solid gray;}
-		</style>
-		
-	</head>
 
-	<body>
-		<h1>DT 제조 혁신 양성과정 교육생 이소연</h1>
-		<img src="./puppy.jpeg" alt="프로필 사진" width="20%">
-		<blockquote>2일차 교육 진행중</blockquote>
-		<a href="http://instagram.com/noeyoseel_">인스타그램</a>
-		<a href="lsld3531@naver.com">이메일</a>
-		<dt>이름</dt>
-		<dd>이소연</dd>
-		<dt>생년월일</dt>
-		<dd>1999년11월19일</dd>
-		<dt>사는곳</dt>
-		<dd>경상남도 거제시</dd>
+<head>
+	<title>이소연의 사이트에 오신 것을 환영합니다</title>
+	<style>
+		/* * {
+			padding: 0px;
+			margin: 0px;
+			border: 1px solid gray;
+		}
 
-		<h2>교육</h2>
-			<table>
-				<thead>
-					<tr>
-						<th>기간</th>
-						<th>기관/과목명</th>
-						<th>상태</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>2024.07.01~2024.12.23</td>
-						<td>DT제조양성교육</td>
-						<td>수강중</td>
-					</tr>
-				</tbody>
-			</table>
+		* {
+			background-color: rgba(255, 255, 0, 0.03);
+			border: 1px solid rgba(0, 0, 0, 0.05);
+		} */
+		 
+		 *{
+			font-family : "맑은고딕"
+		 }
+
+		html,body {
+			background-color: unset;
+		}
+
+		.puppy {
+			width: 30%;
+			border-radius: 100px;
+			margin : 0px 12px 24px 12px;
+			box-shadow: 10px 3px 30px 5px rgba(0,0,0,0.15); 
+		}
+		h1 {
+			text-align: center;
+			margin: 18px;
+			font-size:22px;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		blockquote {
+			margin: 24px;
+			padding: 24px;
+			text-align: center;
+			border-radius: 20px;
+			background-color: rgba(255,255,0,0.05)
+		}
+
+		a {
+			margin : 24px 24px 24px 24px;
+			padding : 10px;
+			border-radius : 15px;
+			width : 20px 100%;
+			border : 1px solid orange;
+			background-color : rgba(255,255,0,0.1);
+			box-shadow: 5px 5px 10px 0.1px gray;
+			display : inline-block;
+			
+		}
+
+		dt {
+			width: 30%;
+			display: inline-block;
+			text-align : left;
+			font-weight : bold;
+		    
+		}
 		
-		<h3> 좋아하는것 </h3>
-		<img src="./baekhyun.jpg" alt="백현" width="18%">
-		<img src="./egg.jpg" alt="에그타르트" width="25%">
+		dd {
+			display : inline-block;
+			width : 60%;
+			text-align : left;
+		}
+		table {
+			border-collapse: collapse;
+			margin : auto;
+		}
+		td {
+			padding : 12px;
+		}
+
+		th{
+			padding : 12px;
+			border-bottom : 1px solid gray;
+		}
+
+		p{
+			width: 80%;
+			margin: 12px auto;
+			line-height : 1.5;
+			word-break : keep-all;
+			clear: right;
+		}
+
+		p::after, p::before {
+			display : inline-block;
+			content : "\"";
+			font-size : 20pt;
+			line-height: 1px;
+			font-family: serif;
+		}
 		
-		<h4>제가 더 궁금하시면 아래 양식을 작성하셔서 연락주세요</h4>
-			<form>
-			<input type="email" placeholder="이메일을 입력하세요">
-			<textarea placeholder="양식을 입력하세요"></textarea>
-			<input type="submit">
-			</form>
-	</body>
+		img {
+			display: block;
+			float:right;
+			margin: auto;
+		}
+
+		h2,h3{
+			margin :24px;
+		}
+		input,textarea {
+			display: block;
+			width : 100%;
+			margin-bottom : 6px;
+			min-height: 32px;
+		}
+		form {
+			max-width : 60%;
+			margin : auto;
+		}
+
+
+	</style>
+</head>
+
+<body>
+	<h1>DT 제조 혁신 양성과정 교육생 이소연</h1>
+	<div class="center">
+		<img class="puppy" src="./puppy.jpeg" alt="프로필 사진">
+	<!--가운데 정렬을 위해 div 태그 넣었음-->
+	<blockquote class="emphasize"><b>교육 2일차</b></blockquote>
+	<a href="http://instagram.com/noeyoseel_">인스타그램</a>
+	<a href="lsld3531@naver.com">이메일</a>
+	</div>
+
+	<dt>이름</dt>
+	<dd>이소연</dd>
+	<dt>생년월일</dt>
+	<dd>1999년11월19일</dd>
+	<dt>사는곳</dt>
+	<dd>경상남도 거제시</dd>
+
+	<h2>교육</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>기간</th>
+				<th>기관/과목명</th>
+				<th>상태</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>2024.07.01~2024.12.23</td>
+				<td>DT제조양성교육</td>
+				<td>수강중</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h3> 좋아하는것 </h3>
+	<div class="favorite">
+	<img src="./baekhyun.jpg" alt="백현" width="18%">
+	<p> 제가 좋아하는 것에 대해 소개하도록 하겠습니다. 첫번째로 엑소의 백현입니다 2012년 exo-k로 데뷔하여 2024년 현재 데뷔 12년차이며 첫 정규앨범 판매량이 100만에 달하며 아주 큰 인기를 거두었습니다. 최근 솔로로 아시아 투어를 진행하였으며 이달 말 앵콜콘서트가 진행 될 예정입니다. 제가 좋아하는 가장 큰 이유는 이름이 알려지고 유명해지면 현재 가진것에 만족하여 머무는 경우가 보통이라고 생각하지만 항상 백현은 본인이 모자라다는 생각을 하고 스스로를 발전시키기 위해 노력하는 사람이기 때문입니다.  </p>
+	<img src="./egg.jpg" alt="에그타르트" width="25%">
+	<p> 두번째로는 에그타르트입니다. 처음 에그타르트가 맛있다고 생각하게 된건 고등학교 시절이었습니다. 친구들과 하교 후 함께 간 kfc에서 갓 나온 따끈따끈한 에그타르트를 먹은 이후 저는 에그타르트와 사랑에 빠질 수 밖에 없는 운명이 되었습니다. </p>
+	</div>
+
+	<h4>제가 더 궁금하시면 아래 양식을 작성하셔서 연락주세요</h4>
+	<form>
+		<input type="email" placeholder="이메일을 입력하세요">
+		<textarea placeholder="양식을 입력하세요"></textarea>
+		<input type="submit">
+	</form>
+</body>
+
 </html>
